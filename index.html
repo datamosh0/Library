@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header">LIBRARY</h1>
+    </header>
+    <div class="add__container">
+      <button class="add__book">Add Book</button>
+    </div>
+
+    <div class="modal modal__hidden">
+      <form class="modal__content" id="form">
+        <div class="close__btn">x</div>
+        <h3 class="big-title">Add new book</h3>
+        <input
+          class="input"
+          type="text"
+          id="title"
+          placeholder="Title"
+          required=""
+        />
+        <p class="error-msg" id="errorMsg"></p>
+        <input
+          class="input"
+          type="text"
+          id="author"
+          placeholder="Author"
+          required=""
+        />
+        <div class="is-read">
+          <label for="isRead">Have you read it?</label>
+          <input class="checkbox" type="checkbox" id="isRead" />
+        </div>
+        <button class="add__book" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <section class="content"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
